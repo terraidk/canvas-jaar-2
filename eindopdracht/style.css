@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Navbar */
+navbar {
+    background: lightseagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px;
+}
+
+.navbar-li {
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar-a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.navbar-a:hover {
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+}
+
+.logo_navbar {
+    width: auto;  
+    height: 100px; 
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 100px;
+}
+.ingelogd{
+    list-style-type: none;
+    color: white;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.boxlog{
+    position: relative;
+}
+
+.uitloggen {
+    display: none;
+    position: absolute;
+    top: 71px; 
+    right: 25px;
+    background-color: white;
+}
+.formuit{
+    background-color: purple;
+}
+
+.uit{
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+}
+.uitloggen::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent black transparent;
+}
+
+.drop .uitloggen{
+    display: block;
+}
+
+/* Add these styles to your existing CSS */
+
+.profile-picture {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%; /* For a circular profile picture */
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    z-index: 1;
+    padding: 5px 0;
+    margin-top: 5px;
+    right: 0;
+}
+
+.dropdown-item {
+    padding: 8px 15px;
+}
+
+/* Show the dropdown when the user clicks on the profile picture */
+.ingelogd:hover .dropdown {
+    display: block;
+}
+
